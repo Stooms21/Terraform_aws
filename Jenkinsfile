@@ -12,7 +12,6 @@ description: 'Automatically run apply after generating plan?')
 			stage('checkout') {
 				steps {
 					script{
-						echo "AWS_ACCESS_KEY_ID: ${env.AWS_ACCESS_KEY_ID}"
 						dir("terraform")
 						{
 							git
