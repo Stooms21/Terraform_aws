@@ -13,7 +13,11 @@ pipeline {
 					script{
 						dir("terraform")
 						{
-							git "https://github.com/Stooms21/Terraform_aws.git"
+							checkout([$class: 'GitSCM',
+							    branches: [[name: '*/main']],
+							    doGenerateSubmoduleConfigurations: false,
+							    extensions: [],
+							    userRemoteConfigs: [[url: 'https://github.com/Stooms21/Terraform_aws.git']]
 						}
 					}
 				}
