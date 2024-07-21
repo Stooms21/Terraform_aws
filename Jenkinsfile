@@ -14,8 +14,7 @@ description: 'Automatically run apply after generating plan?')
 					script{
 						dir("terraform")
 						{
-							git clone
-"https://github.com/Stooms21/Terraform_aws.git"
+							git "https://github.com/Stooms21/Terraform_aws.git"
 						}
 					}
 				}
