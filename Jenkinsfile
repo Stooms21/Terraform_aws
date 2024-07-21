@@ -12,7 +12,7 @@ description: 'Automatically run apply after generating plan?')
 			stage('checkout') {
 				steps {
 					script{
-						dir("terraform")
+						dir("terraform/test")
 						{
 							git
 "https://github.com/Stooms21/Terraform_aws.git"
