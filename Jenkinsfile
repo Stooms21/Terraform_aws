@@ -18,6 +18,7 @@ pipeline {
 							    doGenerateSubmoduleConfigurations: false,
 							    extensions: [],
 							    userRemoteConfigs: [[url: 'https://github.com/Stooms21/Terraform_aws.git']]
+							])
 						}
 					}
 				}
