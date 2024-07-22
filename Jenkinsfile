@@ -11,7 +11,7 @@ pipeline {
 			stage('checkout') {
 				steps {
 					script{
-						dir("terraform")
+						dir("terraform2")
 						{
 							checkout([$class: 'GitSCM',
 							    branches: [[name: '*/main']],
